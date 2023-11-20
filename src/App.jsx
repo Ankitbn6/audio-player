@@ -17,7 +17,7 @@ function App() {
     let newArray = fileName.split(".");
     setTitle(newArray[0]);
 
-    if (src.length != 0) {
+    if (src!= "") {
       localStorage.setItem("audiolink", src);
     }
   }, [src]);
