@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     
 
-    if (src!= "") {
+    if (src!= "" && src) {
       let myArray=[];
       let fileName=[];
     myArray = src.split("/");
