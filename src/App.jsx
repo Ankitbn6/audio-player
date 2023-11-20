@@ -11,7 +11,8 @@ function App() {
     } else audioRef.current.currentTime += 10;
   };
   useEffect(() => {
-    let myArray = src.split("/");
+    let myArray=[];
+    myArray = src.split("/");
     let len = myArray.length;
     let fileName = myArray[len - 1];
     let newArray = fileName.split(".");
