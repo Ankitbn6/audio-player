@@ -11,14 +11,15 @@ function App() {
     } else audioRef.current.currentTime += 10;
   };
   useEffect(() => {
-    let myArray=[];
+    
+
+    if (src!= "") {
+      let myArray=[];
     myArray = src.split("/");
     let len = myArray.length;
     let fileName = myArray[len - 1];
     let newArray = fileName.split(".");
     setTitle(newArray[0]);
-
-    if (src!= "") {
       localStorage.setItem("audiolink", src);
     }
   }, [src]);
