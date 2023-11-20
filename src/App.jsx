@@ -25,7 +25,7 @@ function App() {
   }, [src]);
   useEffect(() => {
     let link = localStorage.getItem("audiolink");
-    if (link.length != 0) {
+    if (link!= "") {
       setSrc(link);
       audioRef.current.currentTime = localStorage.getItem("AudioTime");
     }
