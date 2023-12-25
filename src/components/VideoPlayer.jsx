@@ -35,6 +35,7 @@ const VideoPlayer = () => {
           <input
             onChange={(e) => {
               setSrc(e.target.value);
+              localStorage.setItem("videoLink",e.target.value);
             }}
             value={src}
             className="border-2 rounded-lg border-purple-500 w-[250px] md:w-[500px] lg:w-[700px] h-[50px] p-2 text-lg focus:outline-none focus:text-purple-600"
